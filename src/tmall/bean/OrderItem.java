@@ -1,8 +1,11 @@
 package tmall.bean;
 
 public class OrderItem {
+    //购买产品的数量
     private int number;
+    //购买的产品
     private Product product;
+
     private Order order;
     private User user;
     private int id;
