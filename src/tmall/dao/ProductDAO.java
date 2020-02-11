@@ -1,9 +1,3 @@
-/**
-* 模仿天猫整站j2ee 教程 为how2j.cn 版权所有
-* 本教程仅用于学习使用，切勿用于非法用途，由此引起一切后果与本站无关
-* 供购买者学习，请勿私自传播，否则自行承担相关法律责任
-*/	
-
 package tmall.dao;
  
 import java.sql.Connection;
@@ -138,7 +132,8 @@ public class ProductDAO {
         }
         return bean;
     }
-  
+
+    //查询某分类下产品
     public List<Product> list(int cid) {
         return list(cid,0, Short.MAX_VALUE);
     }
@@ -182,9 +177,12 @@ public class ProductDAO {
         }
         return beans;
     }
+
+    //查询所有产品
     public List<Product> list() {
         return list(0,Short.MAX_VALUE);
     }
+
     public List<Product> list(int start, int count) {
         List<Product> beans = new ArrayList<Product>();
  
@@ -226,16 +224,19 @@ public class ProductDAO {
         }
         return beans;
     }    
- 
+
+    //为了显示某个类别下的所有产品
     public void fill(List<Category> cs) {
         for (Category c : cs) 
             fill(c);
     }
+
     public void fill(Category c) {
             List<Product> ps = this.list(c.getId());
             c.setProducts(ps);
     }
- 
+
+    //为了将某分类下的产品8个一行进行显示
     public void fillByRow(List<Category> cs) {
         int productNumberEachRow = 8;
         for (Category c : cs) {
@@ -317,8 +318,3 @@ public class ProductDAO {
             return beans;
     }
 }
-/**
-* 模仿天猫整站j2ee 教程 为how2j.cn 版权所有
-* 本教程仅用于学习使用，切勿用于非法用途，由此引起一切后果与本站无关
-* 供购买者学习，请勿私自传播，否则自行承担相关法律责任
-*/	

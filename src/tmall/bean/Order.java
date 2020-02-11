@@ -20,7 +20,9 @@ public class Order {
     private User user;
     private int id;
     private List<OrderItem> orderItems;
+    //总金额
     private float total;
+    //总数量
     private int totalNumber;
     private String status;
 

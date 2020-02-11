@@ -15,7 +15,8 @@ import tmall.bean.OrderItem;
 import tmall.bean.Product;
 import tmall.bean.User;
 import tmall.util.DBUtil;
- 
+
+//订单详情
 public class OrderItemDAO {
  
     public int getTotal() {
@@ -182,6 +183,7 @@ public class OrderItemDAO {
         }
         return beans;
     }
+
     public List<OrderItem> listByOrder(int oid) {
     	return listByOrder(oid, 0, Short.MAX_VALUE);
     }
@@ -229,6 +231,7 @@ public class OrderItemDAO {
     	return beans;
     }
 
+    //获取订单详情
 	public void fill(List<Order> os) {
 		for (Order o : os) {
 			List<OrderItem> ois=listByOrder(o.getId());
@@ -242,11 +245,9 @@ public class OrderItemDAO {
 			o.setOrderItems(ois);
 			o.setTotalNumber(totalNumber);
 		}
-		
-		
-		
 	}
 
+	//此方法暂时无用
 	public void fill(Order o) {
 		List<OrderItem> ois=listByOrder(o.getId());
 		float total = 0;
@@ -322,8 +323,3 @@ public class OrderItemDAO {
 	}
 	
 }
-/**
-* 模仿天猫整站j2ee 教程 为how2j.cn 版权所有
-* 本教程仅用于学习使用，切勿用于非法用途，由此引起一切后果与本站无关
-* 供购买者学习，请勿私自传播，否则自行承担相关法律责任
-*/	
