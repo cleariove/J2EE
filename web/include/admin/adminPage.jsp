@@ -35,11 +35,13 @@
             </c:if>
         </c:forEach>
 
+<%--        下一页按钮--%>
         <li <c:if test="${!page.hasNext}">class="disabled"</c:if>>
             <a href="?page.start=${page.start+page.count}${page.param}" aria-label="Next">
                 <span aria-hidden="true">&rsaquo;</span>
             </a>
         </li>
+<%--        尾页按钮--%>
         <li <c:if test="${!page.hasNext}">class="disabled"</c:if>>
             <a href="?page.start=${page.last}${page.param}" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>

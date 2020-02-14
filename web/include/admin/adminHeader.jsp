@@ -76,5 +76,3 @@
 </head>
 <body>
 
-</body>
-</html>

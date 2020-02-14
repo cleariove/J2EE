@@ -1,5 +1,9 @@
 package tmall.servlet;
 
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import tmall.dao.CategoryDAO;
 import tmall.util.Page;
 
@@ -8,7 +12,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Method;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 public class BaseBackServlet extends HttpServlet
 {
@@ -48,4 +56,39 @@ public class BaseBackServlet extends HttpServlet
             req.getRequestDispatcher(redirect).forward(req,resp);
 
     }
+
+    public InputStream parseUpload(HttpServletRequest request, Map<String,String> param)
+    {
+        InputStream inputStream = null;
+        try
+        {
+            DiskFileItemFactory diskFileItemFactory = new DiskFileItemFactory();
+            diskFileItemFactory.setSizeThreshold(1024*10240);
+            ServletFileUpload upload = new ServletFileUpload(diskFileItemFactory);
+            upload.setHeaderEncoding("UTF-8");
+            List items = upload.parseRequest(request);//这里写成List<FileItem>也可以
+            Iterator iterator = items.iterator();
+            while(iterator.hasNext())
+            {
+                FileItem fileItem = (FileItem) iterator.next();
+                //判断该项如果是文件
+                if(!fileItem.isFormField())
+                {
+                    inputStream = fileItem.getInputStream();
+                }
+                else
+                {
+                    String name = fileItem.getFieldName();
+                    String value = fileItem.getString("UTF-8");
+//                    value =  new String(value.getBytes("ISO-8859-1"),"UTF-8");
+                    param.put(name,value);
+                }
+            }
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return inputStream;
+    }
+
 }

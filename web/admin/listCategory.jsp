@@ -9,11 +9,15 @@
 <%@ include file="../include/admin/adminHeader.jsp"%>
 <%@ include file="../include/admin/adminNavigator.jsp"%>
 
-<html>
-<head>
-    <title>分类管理</title>
-</head>
-<body>
+<script>
+    $("#addForm").submit(function () {
+        return checkEmpty("categoryPic", "分类图片") && checkEmpty("name","分类名称");
+    })
+</script>
+
+
+<title>分类管理</title>
+
 <div class="workingArea">
     <h1 class="label label-info" >分类管理</h1>
     <br>
@@ -52,6 +56,7 @@
         <%@include file="../include/admin/adminPage.jsp" %>
     </div>
 
+<%--    新建分类--%>
     <div class="panel panel-warning addDiv">
         <div class="panel-heading">新增分类</div>
         <div class="panel-body">
@@ -76,8 +81,5 @@
             </form>
         </div>
     </div>
-
 </div>
-</body>
 <%@ include file="../include/admin/adminFooter.jsp"%>
-</html>
