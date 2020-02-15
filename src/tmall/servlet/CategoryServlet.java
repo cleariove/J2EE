@@ -2,7 +2,6 @@ package tmall.servlet;
 
 
 import tmall.bean.Category;
-import tmall.dao.CategoryDAO;
 import tmall.util.ImageUtil;
 import tmall.util.Page;
 
@@ -14,7 +13,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -81,6 +79,36 @@ public class CategoryServlet extends BaseBackServlet
 
     public String update(HttpServletRequest request, HttpServletResponse response, Page page)
     {
+        Map<String,String> map = new HashMap<>();
+        InputStream is = parseUpload(request,map);
+        String name = map.get("name");
+        int id = Integer.parseInt(map.get("id"));
+        Category category = new Category();
+        category.setName(name);
+        category.setId(id);
+        categoryDAO.update(category);
+        File folder = new File(request.getServletContext().getRealPath("img/category"));
+        if(!folder.exists())
+            folder.mkdirs();
+        File file = new File(folder, category.getId()+".jpg");
+        try
+        {
+            if(is != null && is.available() != 0)
+            {
+                FileOutputStream fos = new FileOutputStream(file);
+                byte[] bytes = new byte[1024*1024];
+                int length = 0;
+                while((length = is.read(bytes)) != -1)
+                    fos.write(bytes,0,length);
+                fos.flush();
+                BufferedImage image = ImageUtil.change2jpg(file);
+                ImageIO.write(image,"jpg",file);
+            }
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        return "@admin_category_list";
     }
 
 
