@@ -18,7 +18,7 @@ public class Page
         this.count = count;
     }
 
-    public int getTotalPageNumber()
+    public int getTotalPage()
     {
         int pageNumber = total / count;
         if(total % count != 0)

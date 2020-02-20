@@ -6,7 +6,43 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="" />
+    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="更改了图片大小">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/filter/BaseServletFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/filter/EncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/servlet/BaseBackServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/servlet/CategoryServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/ImageUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/Page.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/admin/editCategory.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/admin/listCategory.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/img/category/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/admin/adminFooter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/admin/adminHeader.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/admin/adminNavigator.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/admin/adminPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/filter/BaseServletFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/filter/EncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/servlet/BaseBackServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/servlet/CategoryServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/ImageUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/tmall_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/tmall_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/dao/ReviewDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/dao/ReviewDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/DBUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/util/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/util/DBUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/util/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/util/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tmall.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/dao/ReviewDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/dao/ReviewDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/DBUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/include/admin/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include/admin/adminPage.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +52,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -57,7 +93,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,6 +108,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\me\IdeaProjects\tmall\web\admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\me\IdeaProjects\tmall\web" />
       <recent name="C:\Users\me\IdeaProjects\tmall\web\WEB-INF\lib" />
@@ -82,10 +121,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.24" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.24" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/tmall" />
       <deployment>
         <artifact name="tmall:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/tmall_war_exploded" />
+            <option name="CONTEXT_PATH" value="/tmall" />
           </settings>
         </artifact>
       </deployment>
@@ -97,6 +137,39 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56011" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -130,6 +203,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -152,7 +230,11 @@
       <workItem from="1578897972859" duration="2541000" />
       <workItem from="1580392615642" duration="1940000" />
       <workItem from="1580783086176" duration="639000" />
-      <workItem from="1580810106961" duration="21545000" />
+      <workItem from="1580810106961" duration="38908000" />
+      <workItem from="1581730959429" duration="4885000" />
+      <workItem from="1581736241768" duration="7003000" />
+      <workItem from="1582113669368" duration="2956000" />
+      <workItem from="1582171969408" duration="1267000" />
     </task>
     <task id="LOCAL-00001" summary="上传了dao类和实体类，以及一些css">
       <created>1578662431177</created>
@@ -196,7 +278,42 @@
       <option name="project" value="LOCAL" />
       <updated>1581567229887</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="上传了Page类">
+      <created>1581567285513</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581567285513</updated>
+    </task>
+    <task id="LOCAL-00008" summary="上传了分页显示的前端效果">
+      <created>1581588544267</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581588544268</updated>
+    </task>
+    <task id="LOCAL-00009" summary="完成图像工具中的格式转换工作">
+      <created>1581732728328</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581732728328</updated>
+    </task>
+    <task id="LOCAL-00010" summary="解决了中文乱码">
+      <created>1581733382732</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581733382732</updated>
+    </task>
+    <task id="LOCAL-00011" summary="完成了编辑更新操作">
+      <created>1581735813444</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581735813444</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,21 +326,39 @@
     <MESSAGE value="上传了jsp的头部文件" />
     <MESSAGE value="类别的公共页面" />
     <MESSAGE value="后台完成分页，分类转发功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="后台完成分页，分类转发功能" />
+    <MESSAGE value="上传了Page类" />
+    <MESSAGE value="上传了分页显示的前端效果" />
+    <MESSAGE value="完成图像工具中的格式转换工作" />
+    <MESSAGE value="解决了中文乱码" />
+    <MESSAGE value="完成了编辑更新操作" />
+    <MESSAGE value="更改了图片大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改了图片大小" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1578407967624">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1578407967624" />
+    <state x="360" y="71" key="#Tomcat_Server" timestamp="1582116797937">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="71" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1582116797937" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582173103574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582173103574" />
     <state x="434" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578406835097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="434" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1578406835097" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1581561418610">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1581732826434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581561418610" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581732826434" />
+    <state x="449" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581736652862">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1581736652862" />
     <state x="548" y="297" width="439" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578559206650">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -232,82 +367,90 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578662226794" />
-    <state x="372" y="7" key="CommitChangelistDialog2" timestamp="1581567227139">
+    <state x="372" y="7" key="CommitChangelistDialog2" timestamp="1582173631698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581567227139" />
-    <state x="147" y="73" key="DiffContextDialog" timestamp="1581386593598">
+    <state x="372" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582173631698" />
+    <state x="523" y="128" key="DetectedRootsChooserDialog" timestamp="1582173209146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="73" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1581386593598" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1578662205701">
+    <state x="523" y="128" key="DetectedRootsChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1582173209146" />
+    <state x="147" y="73" key="DiffContextDialog" timestamp="1582173116676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578662205701" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1579780524886">
+    <state x="147" y="73" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1582173116676" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1582173218303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579780524886" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1579780524886">
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582173218303" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1582173641465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579780524886" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1579780524886">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582173641465" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1582173641465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579780524886" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1579780524886">
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582173641465" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1582173641465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579780524886" />
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1579780524887">
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582173641465" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1582173641465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579780524887" />
-    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1579780524886">
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582173641465" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1582173642285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579780524886" />
-    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1579780524886">
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582173642285" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1582173642285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579780524886" />
-    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1579780524886">
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582173642285" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1582173642285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579780524886" />
-    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1579780524887">
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582173642285" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1582173642285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579780524887" />
-    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1579780524887">
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582173642285" />
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1582173477451">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1579780524887" />
-    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1579780524887">
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582173477451" />
+    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1582173477451">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1579780524887" />
-    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1579780524887">
+    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582173477451" />
+    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1582173477451">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1579780524887" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1579577739277">
+    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582173477451" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1582173477451">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579577739277" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582173477451" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1582173246367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582173246367" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1578662711882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578662711882" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1582113674379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582113674379" />
     <state x="586" y="149" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1581386604189">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="149" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824@0.0.1536.824" timestamp="1581386604189" />
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578797257899">
+    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582173635274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1578797257899" />
+    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1582173635274" />
     <state x="600" y="277" key="git4idea.rebase.GitRebaseDialog" timestamp="1578657124170">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -316,9 +459,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580783126218" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1578622563161">
+    <state x="470" y="40" key="refactoring.ChangeSignatureDialog" timestamp="1581734932956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1578622563161" />
+    <state x="470" y="40" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1581734932956" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1581695357640">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1581695357640" />
   </component>
 </project>

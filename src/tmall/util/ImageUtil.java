@@ -11,7 +11,7 @@ public class ImageUtil
         try
         {
             Image image = Toolkit.getDefaultToolkit().createImage(f.getAbsolutePath());
-            PixelGrabber pg = new PixelGrabber(image,-1,-1,0,0,true);
+            PixelGrabber pg = new PixelGrabber(image,0,0,-1,-1,true);
             pg.grabPixels();
             int width = pg.getWidth();
             int height = pg.getHeight();

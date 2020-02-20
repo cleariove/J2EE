@@ -10,7 +10,7 @@ public class DBUtil {
 	static String database = "tmall";
 	static String encoding = "UTF-8";
 	static String loginName = "root";
-	static String password = "admin";
+	static String password = "123456";
 
 	static {
 		try {
