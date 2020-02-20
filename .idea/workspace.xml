@@ -6,42 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="更改了图片大小">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/filter/BaseServletFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/filter/EncodingFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/servlet/BaseBackServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/servlet/CategoryServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/ImageUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/Page.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/admin/editCategory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/admin/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/admin/listCategory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/img/category/0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/admin/adminFooter.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/admin/adminHeader.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/admin/adminNavigator.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/admin/adminPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/filter/BaseServletFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/filter/EncodingFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/servlet/BaseBackServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/servlet/CategoryServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/ImageUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/Page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/tmall_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/tmall_war_exploded.xml" afterDir="false" />
+    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/dao/ReviewDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/dao/ReviewDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmall/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/filter/EncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmall/util/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/util/DBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmall/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/util/ImageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmall/util/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/util/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tmall.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/dao/ReviewDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/dao/ReviewDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/include/admin/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include/admin/adminPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/img/category/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/img/category/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/CategoryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/OrderItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/OrderItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/ProductImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/ProductImageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/PropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/PropertyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/PropertyValueDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/PropertyValueDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/ReviewDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/ReviewDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/servlet/CategoryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/servlet/CategoryServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +211,9 @@
       <workItem from="1581730959429" duration="4885000" />
       <workItem from="1581736241768" duration="7003000" />
       <workItem from="1582113669368" duration="2956000" />
-      <workItem from="1582171969408" duration="1267000" />
+      <workItem from="1582171969408" duration="1406000" />
+      <workItem from="1582191789264" duration="1117000" />
+      <workItem from="1582204128917" duration="1306000" />
     </task>
     <task id="LOCAL-00001" summary="上传了dao类和实体类，以及一些css">
       <created>1578662431177</created>
@@ -313,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581735813444</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="更改了图片大小">
+      <created>1582173684935</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582173684935</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,10 +353,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578662226794" />
-    <state x="372" y="7" key="CommitChangelistDialog2" timestamp="1582173631698">
+    <state x="372" y="7" key="CommitChangelistDialog2" timestamp="1582173677200">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582173631698" />
+    <state x="372" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582173677200" />
     <state x="523" y="128" key="DetectedRootsChooserDialog" timestamp="1582173209146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -383,54 +369,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582173218303" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1582173641465">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1582205425306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582173641465" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1582173641465">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582205425306" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1582205425306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582173641465" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1582173641465">
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582205425306" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1582205425306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582173641465" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1582173641465">
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582205425306" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1582205425306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582173641465" />
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1582173642285">
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582205425306" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1582205425234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582173642285" />
-    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1582173642285">
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582205425234" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1582205425233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582173642285" />
-    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1582173642285">
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582205425233" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1582205425233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582173642285" />
-    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1582173642285">
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582205425233" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1582205425233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582173642285" />
-    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1582173477451">
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582205425233" />
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1582205425234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582173477451" />
-    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1582173477451">
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582205425234" />
+    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1582205425234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582173477451" />
-    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1582173477451">
+    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582205425234" />
+    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1582205425234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582173477451" />
-    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1582173477451">
+    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582205425234" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1582205425234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582173477451" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582205425234" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1582173246367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
