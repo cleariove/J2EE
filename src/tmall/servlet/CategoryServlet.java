@@ -66,7 +66,7 @@ public class CategoryServlet extends BaseBackServlet
     {
         int id = Integer.parseInt(request.getParameter("id"));
         categoryDAO.delete(id);
-        return "@admin/listCategory.jsp";
+        return "@admin_category_list";
     }
 
     public String edit(HttpServletRequest request, HttpServletResponse response, Page page)
