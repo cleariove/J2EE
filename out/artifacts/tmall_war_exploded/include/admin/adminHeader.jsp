@@ -60,15 +60,16 @@
             }
             return true;
         }
-        
+
+        // 最外层加上$(function () {})就相当于$(document).ready(function () {})
         $(function () {
             $("a").click(function () {
                 var deleteLink = $(this).attr("deleteLink");
                 console.log(deleteLink);
                 if(deleteLink == "true")
                 {
-                    var confirm = confirm("确认删除？")
-                    return r == true;
+                    var f = confirm("确认删除？")
+                    return f == true;
                 }
             });
         })

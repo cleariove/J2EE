@@ -21,7 +21,7 @@
             if(value.length == 0)
             {
                 alert(name + "不能为空");
-                $("#" + id)[0].focus();
+                $("#" + id)[0].focus();//似乎用doc对象和jq对象都可以获得焦点
                 return false;
             }
             return true;
@@ -60,15 +60,16 @@
             }
             return true;
         }
-        
+
+        // 最外层加上$(function () {})就相当于$(document).ready(function () {})
         $(function () {
             $("a").click(function () {
                 var deleteLink = $(this).attr("deleteLink");
                 console.log(deleteLink);
                 if(deleteLink == "true")
                 {
-                    var confirm = confirm("确认删除？")
-                    return r == true;
+                    var f = confirm("确认删除？")
+                    return f == true;
                 }
             });
         })
