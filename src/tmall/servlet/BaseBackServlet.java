@@ -37,11 +37,12 @@ public class BaseBackServlet extends HttpServlet
             count = Integer.parseInt(req.getParameter("page.count"));
         Page page = new Page(start,count);
 
-        //通过反射调用了CategoryServlet中对应的方法
+        //通过反射调用了对应Servlet中对应的方法
         String method = (String) req.getAttribute("method");
         String redirect = "";
         try
         {
+            //这个this是指子类的对象，因为是子类调用的父类方法
             Method m = this.getClass().getDeclaredMethod(method,HttpServletRequest.class,
                     HttpServletResponse.class,Page.class);
             redirect = (String) m.invoke(this,req,resp,page);

@@ -36,7 +36,7 @@
                         <td><input  id="name" name="name" value="${c.name}" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>分类圖片</td>
+                        <td>分类图片</td>
                         <td>
                             <input id="categoryPic" accept="image/*" type="file" name="filepath" />
                         </td>
@@ -51,4 +51,6 @@
             </form>
         </div>
     </div>
+
+    <%@ include file="../include/admin/adminFooter.jsp"%>
 </div>

@@ -14,7 +14,12 @@ public class PropertyServlet extends BaseBackServlet {
     {
         int cid = Integer.parseInt(request.getParameter("cid"));
         List<Property> properties = propertyDAO.list(cid,page.getStart(),page.getCount());
+        Category category  = categoryDAO.get(cid);
+        page.setTotal(propertyDAO.getTotal(cid));
+        page.setParam("&cid="+cid);
+        request.setAttribute("page",page);
         request.setAttribute("properties",properties);
+        request.setAttribute("c",category);//用于新增属性以及显示目录栏
         return "admin/listProperty.jsp";
     }
 
@@ -48,14 +53,12 @@ public class PropertyServlet extends BaseBackServlet {
 
     public String update(HttpServletRequest request,HttpServletResponse response,Page page)
     {
-        int cid = Integer.parseInt(request.getParameter("cid"));
         int pid = Integer.parseInt(request.getParameter("pid"));
         String name = request.getParameter("name");
         Property property = propertyDAO.get(pid);
-        Category category = categoryDAO.get(cid);
         property.setName(name);
-        property.setCategory(category);
-        return "@admin_property_list?cid="+cid;
+        propertyDAO.update(property);
+        return "@admin_property_list?cid="+property.getCategory().getId();
     }
 
 }

@@ -6,7 +6,10 @@ public class Page
     private int start;//起始位置
     private int count;//页大小
     private int total;//数据总数
-    private String param;
+
+    //例如一个url为http:127.0.0.1://8080:tmall/admin_property_list?page.start=5&cid=81
+    //将page.start的值赋给page对象的start将&cid赋给param
+    private String param;//url所需要添加的参数
 
     public Page()
     {

@@ -21,7 +21,7 @@
             if(value.length == 0)
             {
                 alert(name + "不能为空");
-                $("#" + id)[0].focus();
+                $("#" + id)[0].focus();//似乎用doc对象和jq对象都可以获得焦点
                 return false;
             }
             return true;

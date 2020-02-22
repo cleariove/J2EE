@@ -21,14 +21,6 @@
             </a>
         </li>
 <%--        所有页码--%>
-
-        <%
-        Page page1 = (Page) request.getAttribute("page");
-            System.out.println(page1.getStart());
-            System.out.println(page1.getLast());
-            System.out.println(page1.getCount());
-            System.out.println(page1.getTotalPage());
-        %>
         <c:forEach begin="0" end="${page.totalPage - 1}" varStatus="status">
 <%--            只相对当前页面的前两页和后4页--%>
             <c:if test="${status.index - page.start/page.count <= 4 && status.index - page.start/page.count >= -2}">
