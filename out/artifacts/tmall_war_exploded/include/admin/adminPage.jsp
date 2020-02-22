@@ -6,6 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" isELIgnored="false" %>
+<script>
+    $(function () {
+        $("ul.pagination li.disabled a").removeAttr("href");
+    })
+</script>
 <nav>
     <ul class="pagination">
 <%--        首页按钮--%>
