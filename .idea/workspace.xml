@@ -6,10 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="完成分类的属性操作">
+    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/util/Page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/util/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/servlet/BaseBackServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/servlet/BaseBackServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/bean/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/bean/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/servlet/BaseBackServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/servlet/BaseBackServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/servlet/BaseBackServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/servlet/BaseBackServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/editProperty.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/editProperty.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +180,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -210,7 +216,9 @@
       <workItem from="1582295315702" duration="450000" />
       <workItem from="1582295853193" duration="2611000" />
       <workItem from="1582347560981" duration="3333000" />
-      <workItem from="1582360864420" duration="3973000" />
+      <workItem from="1582360864420" duration="4289000" />
+      <workItem from="1582380793304" duration="4114000" />
+      <workItem from="1582424351948" duration="4110000" />
     </task>
     <task id="LOCAL-00001" summary="上传了dao类和实体类，以及一些css">
       <created>1578662431177</created>
@@ -324,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582365294350</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="浏览首页时让首页，上一页，本页按钮失效">
+      <created>1582365833103</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1582365833103</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +362,8 @@
     <MESSAGE value="修改了删除时的跳转方式" />
     <MESSAGE value="增加了每个类别的属性" />
     <MESSAGE value="完成分类的属性操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成分类的属性操作" />
+    <MESSAGE value="浏览首页时让首页，上一页，本页按钮失效" />
+    <option name="LAST_COMMIT_MESSAGE" value="浏览首页时让首页，上一页，本页按钮失效" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1578407967624">
@@ -366,10 +382,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="434" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1578406835097" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1581732826434">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1582381306222">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581732826434" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582381306222" />
     <state x="449" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581736652862">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -382,10 +398,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578662226794" />
-    <state x="372" y="7" key="CommitChangelistDialog2" timestamp="1582365293616">
+    <state x="372" y="7" key="CommitChangelistDialog2" timestamp="1582365832595">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582365293616" />
+    <state x="372" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582365832595" />
     <state x="523" y="128" key="DetectedRootsChooserDialog" timestamp="1582173209146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -398,54 +414,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582173218303" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1582365723593">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1582428482191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582365723593" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1582365723593">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582428482191" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1582428482191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582365723593" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1582365723593">
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582428482191" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1582428482191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582365723593" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1582365723593">
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582428482191" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1582428482191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582365723593" />
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1582365723544">
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582428482191" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1582428482147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582365723544" />
-    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1582365723544">
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582428482147" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1582428482147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582365723544" />
-    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1582365723544">
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582428482147" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1582428482147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582365723544" />
-    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1582365723544">
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582428482147" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1582428482147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582365723544" />
-    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1582365723544">
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582428482147" />
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1582428482147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582365723544" />
-    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1582365723544">
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582428482147" />
+    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1582428482147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582365723544" />
-    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1582365723544">
+    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582428482147" />
+    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1582428482147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582365723544" />
-    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1582365723544">
+    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582428482147" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1582428482147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582365723544" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582428482147" />
     <state width="1024" height="210" key="GridCell.Tab.3.bottom" timestamp="1582274652716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -510,9 +526,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="470" y="40" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1581734932956" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1581695357640">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1582426570702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1581695357640" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582426570702" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/study/how2j/tmall/web/admin/editCategory.jsp</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tmall/servlet/ProductServlet.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

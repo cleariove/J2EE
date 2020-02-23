@@ -41,7 +41,7 @@ public class ProductDAO {
   
             ps.setString(1, bean.getName());
             ps.setString(2, bean.getSubTitle());
-            ps.setFloat(3, bean.getOrignalPrice());
+            ps.setFloat(3, bean.getOriginalPrice());
             ps.setFloat(4, bean.getPromotePrice());
             ps.setInt(5, bean.getStock());
             ps.setInt(6, bean.getCategory().getId());
@@ -61,12 +61,12 @@ public class ProductDAO {
   
     public void update(Product bean) {
  
-        String sql = "update Product set name= ?, subTitle=?, orignalPrice=?,promotePrice=?,stock=?, cid = ?, createDate=? where id = ?";
+        String sql = "update Product set name= ?, subTitle=?, OriginalPrice=?,promotePrice=?,stock=?, cid = ?, createDate=? where id = ?";
         try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
  
             ps.setString(1, bean.getName());
             ps.setString(2, bean.getSubTitle());
-            ps.setFloat(3, bean.getOrignalPrice());
+            ps.setFloat(3, bean.getOriginalPrice());
             ps.setFloat(4, bean.getPromotePrice());
             ps.setInt(5, bean.getStock());
             ps.setInt(6, bean.getCategory().getId());
@@ -108,7 +108,7 @@ public class ProductDAO {
  
                 String name = rs.getString("name");
                 String subTitle = rs.getString("subTitle");
-                float orignalPrice = rs.getFloat("orignalPrice");
+                float OriginalPrice = rs.getFloat("OriginalPrice");
                 float promotePrice = rs.getFloat("promotePrice");
                 int stock = rs.getInt("stock");
                 int cid = rs.getInt("cid");
@@ -116,7 +116,7 @@ public class ProductDAO {
                
                 bean.setName(name);
                 bean.setSubTitle(subTitle);
-                bean.setOrignalPrice(orignalPrice);
+                bean.setOriginalPrice(OriginalPrice);
                 bean.setPromotePrice(promotePrice);
                 bean.setStock(stock);
                 Category category = new CategoryDAO().get(cid);
@@ -155,14 +155,14 @@ public class ProductDAO {
                 int id = rs.getInt(1);
                 String name = rs.getString("name");
                 String subTitle = rs.getString("subTitle");
-                float orignalPrice = rs.getFloat("orignalPrice");
+                float OriginalPrice = rs.getFloat("OriginalPrice");
                 float promotePrice = rs.getFloat("promotePrice");
                 int stock = rs.getInt("stock");
                 Date createDate = DateUtil.t2d( rs.getTimestamp("createDate"));
  
                 bean.setName(name);
                 bean.setSubTitle(subTitle);
-                bean.setOrignalPrice(orignalPrice);
+                bean.setOriginalPrice(OriginalPrice);
                 bean.setPromotePrice(promotePrice);
                 bean.setStock(stock);
                 bean.setCreateDate(createDate);
@@ -201,14 +201,14 @@ public class ProductDAO {
                 int cid = rs.getInt("cid");
                 String name = rs.getString("name");
                 String subTitle = rs.getString("subTitle");
-                float orignalPrice = rs.getFloat("orignalPrice");
+                float OriginalPrice = rs.getFloat("OriginalPrice");
                 float promotePrice = rs.getFloat("promotePrice");
                 int stock = rs.getInt("stock");
                 Date createDate = DateUtil.t2d( rs.getTimestamp("createDate"));
  
                 bean.setName(name);
                 bean.setSubTitle(subTitle);
-                bean.setOrignalPrice(orignalPrice);
+                bean.setOriginalPrice(OriginalPrice);
                 bean.setPromotePrice(promotePrice);
                 bean.setStock(stock);
                 bean.setCreateDate(createDate);
@@ -293,14 +293,14 @@ public class ProductDAO {
                     int cid = rs.getInt("cid");
                     String name = rs.getString("name");
                     String subTitle = rs.getString("subTitle");
-                    float orignalPrice = rs.getFloat("orignalPrice");
+                    float OriginalPrice = rs.getFloat("OriginalPrice");
                     float promotePrice = rs.getFloat("promotePrice");
                     int stock = rs.getInt("stock");
                     Date createDate = DateUtil.t2d( rs.getTimestamp("createDate"));
  
                     bean.setName(name);
                     bean.setSubTitle(subTitle);
-                    bean.setOrignalPrice(orignalPrice);
+                    bean.setOriginalPrice(OriginalPrice);
                     bean.setPromotePrice(promotePrice);
                     bean.setStock(stock);
                     bean.setCreateDate(createDate);

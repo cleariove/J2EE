@@ -5,6 +5,7 @@ import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import tmall.dao.CategoryDAO;
+import tmall.dao.ProductDAO;
 import tmall.dao.PropertyDAO;
 import tmall.util.Page;
 
@@ -24,6 +25,8 @@ public class BaseBackServlet extends HttpServlet
     protected CategoryDAO categoryDAO = new CategoryDAO();
 
     protected PropertyDAO propertyDAO = new PropertyDAO();
+
+    protected ProductDAO productDAO = new ProductDAO();
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
