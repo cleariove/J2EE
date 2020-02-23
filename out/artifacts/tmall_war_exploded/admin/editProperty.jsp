@@ -8,7 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../include/admin/adminHeader.jsp"%>
 <%@ include file="../include/admin/adminNavigator.jsp"%>
+<script>
+    $(function(){
+        $("#editForm").submit(function(){
+            if(!checkEmpty("name","属性名称"))
+                return false;
+            return true;
+        });
+    });
 
+</script>
 <div class="workingArea">
     <ol class="breadcrumb">
         <li><a href="admin_category_list">所有分类</a></li>
