@@ -15,7 +15,6 @@
             function () {
                 if(checkEmpty("filePathSingle","图片文件"))
                 {
-
                     return true;
                 }
                 return false;
@@ -27,7 +26,6 @@
             function () {
                 if(checkEmpty("filePathDetail","图片文件"))
                 {
-
                     return true;
                 }
                 return false;

@@ -3,6 +3,8 @@ package tmall.servlet;
 import tmall.bean.Category;
 import tmall.bean.Product;
 import tmall.bean.Property;
+import tmall.bean.PropertyValue;
+import tmall.dao.PropertyValueDAO;
 import tmall.util.Page;
 
 import javax.servlet.http.HttpServletRequest;
@@ -88,18 +90,21 @@ public class ProductServlet extends BaseBackServlet
     {
         int pid = Integer.parseInt(request.getParameter("pid"));
         Product p = productDAO.get(pid);
+        //这行代码完成向PropertyValue表插入的操作
+        propertyValueDAO.init(p);
+        List<PropertyValue> propertyValues = propertyValueDAO.list(p.getId());
+        request.setAttribute("pv",propertyValues);
         request.setAttribute("p",p);
         return "admin/editPropertyValue.jsp";
     }
 
     public String updatePropertyValue(HttpServletRequest request, HttpServletResponse response, Page page)
     {
-        Product product = (Product) request.getAttribute("p");
-        List<Property> properties = propertyDAO.list(product.getCategory().getId());
-        for(Property p:properties)
-        {
-            String naem
-        }
-
+        int pvid = Integer.parseInt(request.getParameter("pvid"));
+        String value = request.getParameter("value");
+        PropertyValue pv = propertyValueDAO.get(pvid);
+        pv.setValue(value);
+        propertyValueDAO.update(pv);
+        return "%success";
     }
 }

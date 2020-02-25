@@ -113,7 +113,9 @@ public class PropertyValueDAO {
         return bean;
     }
 
-    //根据某产品的id和产品的属性id获得改属性值对象
+    //根据某产品的id和产品的属性id获得该属性值对象
+    //因为某一产品有多个属性，则同理有多个属性值
+    //一个属性是属于多个同类别的。
     public PropertyValue get(int ptid, int pid ) {
         PropertyValue bean = null;
          
@@ -183,7 +185,9 @@ public class PropertyValueDAO {
         return beans;
     }
 
-    //初始化一个产品，根据改产品对象获得该产品所属分类下的属性值
+    //初始化一个产品，根据改产品对象设置该产品所属分类下的属性值表
+    //因为如果是新增的一个产品，他就已经具有对应分类下的属性。
+    //但是在表PropertyValue中还未建立联系，所以这部分就是在修改属性值前要进行的增加操作
     public void init(Product p) {
         List<Property> pts= new PropertyDAO().list(p.getCategory().getId());
          
