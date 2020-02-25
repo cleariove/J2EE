@@ -65,6 +65,7 @@ span.pvValue{
 }
 span.pvValue input{
 	border-width:0px;
+	width:200px;
 }
 div.addPictureDiv{
 	width:400px;

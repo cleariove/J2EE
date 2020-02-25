@@ -29,6 +29,8 @@ public class BaseBackServlet extends HttpServlet
 
     protected PropertyValueDAO propertyValueDAO = new PropertyValueDAO();
 
+    protected UserDAO userDAO = new UserDAO();
+
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
