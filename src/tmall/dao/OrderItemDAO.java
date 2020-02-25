@@ -231,7 +231,7 @@ public class OrderItemDAO {
     	return beans;
     }
 
-    //获取订单详情
+    //获取某订单下所有的订单商品
 	public void fill(List<Order> os) {
 		for (Order o : os) {
 			List<OrderItem> ois=listByOrder(o.getId());

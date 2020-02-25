@@ -31,6 +31,10 @@ public class BaseBackServlet extends HttpServlet
 
     protected UserDAO userDAO = new UserDAO();
 
+    protected OrderDAO orderDAO = new OrderDAO();
+
+    protected OrderItemDAO orderItemDAO = new OrderItemDAO();
+
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {

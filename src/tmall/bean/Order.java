@@ -27,7 +27,7 @@ public class Order {
     private String status;
 
     public String getStatusDesc(){
-        String desc;
+        String desc = "未知";
         switch(status){
 			case OrderDAO.waitPay:
 				desc="待付款";

@@ -2,9 +2,7 @@ package tmall.servlet;
 
 import tmall.bean.Category;
 import tmall.bean.Product;
-import tmall.bean.Property;
 import tmall.bean.PropertyValue;
-import tmall.dao.PropertyValueDAO;
 import tmall.util.Page;
 
 import javax.servlet.http.HttpServletRequest;

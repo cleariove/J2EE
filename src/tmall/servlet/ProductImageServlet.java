@@ -77,7 +77,6 @@ public class ProductImageServlet extends BaseBackServlet
                     ImageUtil.resizeImage(f, 217, 190, fMiddle);
                 }
             }
-
         }
         catch (Exception e) {
             e.printStackTrace();
