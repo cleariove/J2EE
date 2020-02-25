@@ -2,6 +2,7 @@ package tmall.servlet;
 
 import tmall.bean.Category;
 import tmall.bean.Product;
+import tmall.bean.Property;
 import tmall.util.Page;
 
 import javax.servlet.http.HttpServletRequest;
@@ -81,5 +82,24 @@ public class ProductServlet extends BaseBackServlet
         product.setPromotePrice(promotePrice);
         productDAO.update(product);
         return "@admin_product_list?cid="+cid;
+    }
+
+    public String editPropertyValue(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int pid = Integer.parseInt(request.getParameter("pid"));
+        Product p = productDAO.get(pid);
+        request.setAttribute("p",p);
+        return "admin/editPropertyValue.jsp";
+    }
+
+    public String updatePropertyValue(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        Product product = (Product) request.getAttribute("p");
+        List<Property> properties = propertyDAO.list(product.getCategory().getId());
+        for(Property p:properties)
+        {
+            String naem
+        }
+
     }
 }

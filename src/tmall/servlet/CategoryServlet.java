@@ -66,6 +66,9 @@ public class CategoryServlet extends BaseBackServlet
     {
         int id = Integer.parseInt(request.getParameter("id"));
         categoryDAO.delete(id);
+        String categoryImg = request.getServletContext().getRealPath("img/category");
+        File file = new File(categoryImg,id+".jpg");
+        file.delete();
         return "@admin_category_list";
     }
 

@@ -56,7 +56,7 @@ public class ProductImageDAO {
     }
  
     public void update(ProductImage bean) {
- 
+
     }
  
     public void delete(int id) {
