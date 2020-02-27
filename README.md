@@ -1,4 +1,10 @@
-对于增加方面  
+#Filter配合Servlet
+不管时前台或者是后台，都是由Filter拦截并传递给对应的Servlet，避免了一个路径对应一个servlet的弊端  
+#静态资源
+img文件夹下，category为分类图片，lunbo为首页的轮播图，site为一些标识图片，productDetail为产品详细图片
+productSingle为产品正常尺寸的图片，middle为中等，small为小图  
+css下，back为后台样式，fore为前台样式  
+#后台增加时的思路
 添加类别至category表。  
 可以为类别增加属性至property表。  
 在某个分类下增加商品至product表。  

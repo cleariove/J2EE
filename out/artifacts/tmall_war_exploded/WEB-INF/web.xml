@@ -14,11 +14,22 @@
 
     <filter>
         <filter-name>BaseServletFilter</filter-name>
-        <filter-class>tmall.filter.BaseServletFilter</filter-class>
+        <filter-class>tmall.filter.BackServletFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>BaseServletFilter</filter-name>
         <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ForeServletFilter</filter-name>
+        <filter-class>tmall.filter.ForeServletFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ForeServletFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher><!--表示拦截客户端跳转，默认只拦截客户端跳转-->
+        <dispatcher>FORWARD</dispatcher><!--表示拦截服务端跳转-->
     </filter-mapping>
 
     <servlet>
@@ -73,5 +84,14 @@
     <servlet-mapping>
         <servlet-name>OrderServlet</servlet-name>
         <url-pattern>/orderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForeServlet</servlet-name>
+        <servlet-class>tmall.servlet.ForeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForeServlet</servlet-name>
+        <url-pattern>/foreServlet</url-pattern>
     </servlet-mapping>
 </web-app>

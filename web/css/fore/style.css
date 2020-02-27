@@ -330,7 +330,6 @@ div.footer {
 	margin: 0px 0px;
 	border-top-style: solid;
 	border-top-width: 1px;
-	border-top-color: solid;
 	border-top-color: #e7e7e7;
 }
 
@@ -1007,7 +1006,7 @@ span.productReviewTopReviewLinkNumber {
 }
 
 div.productDetailImagesPart img {
-	display: block; margin 20px 0px;
+	display: block; margin:20px 0px;
 	width: 790px;
 }
 
@@ -1300,13 +1299,13 @@ textarea.leaveMessageTextarea {
 }
 
 span.leaveMessageText {
-	display: inilne-block;
+	display: inline-block;
 	margin-right: 10px;
 	float: left;
 }
 
 span.leaveMessageTextareaSpan {
-	display: inilne-block;
+	display: inline-block;
 }
 
 div.orderItemTotalSumDiv {
@@ -1592,7 +1591,6 @@ div.cartFoot button {
 	background-color: #AAAAAA;
 	border: 0px solid #AAAAAA;
 	color: white;
-	height: height%;
 	width: 120px;
 	height: 50px;
 	font-size: 20px;

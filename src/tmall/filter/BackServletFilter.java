@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class BaseServletFilter implements Filter
+public class BackServletFilter implements Filter
 {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException
