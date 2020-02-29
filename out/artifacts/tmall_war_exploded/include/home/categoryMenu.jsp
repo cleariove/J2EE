@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" isELIgnored="false" %>
 <div class="categoryMenu">
     <c:forEach items="${categories}" var="c">
-        <div class="eachCategory">
+        <div class="eachCategory" cid="${c.id}">
             <span class="glyphicon glyphicon-link"></span>
             <a href="foreCategory?cid=${c.id}">${c.name}</a>
         </div>

@@ -238,7 +238,7 @@ public class ProductDAO {
 
     //为了将某分类下的产品8个一行进行显示
     public void fillByRow(List<Category> cs) {
-        int productNumberEachRow = 8;
+        int productNumberEachRow = 5;
         for (Category c : cs) {
             List<Product> products =  c.getProducts();
             List<List<Product>> productsByRow =  new ArrayList<>();

@@ -10,7 +10,7 @@
     function showProductsAsideCategorys(cid)
     {
         $("div.eachCategory[cid="+cid+"]").css("background-color","white");
-        $("div.eachCategroy[cid="+cid+"] a").css("color","#87CEFA");
+        $("div.eachCategory[cid="+cid+"] a").css("color","#87CEFA");
         $("div.productsAsideCategorys[cid="+cid+"]").show();
     }
     function hideProductsAsideCategorys(cid){
@@ -56,7 +56,7 @@
                 var width = $(this).css("width");
                 var destLeft = parseInt(left) + parseInt(width) / 2;
                 $("img#catear").css("left",destLeft);
-                $("img#catear").css("top",top);
+                $("img#catear").css("top",top - 20);
                 $("img#catear").fadeIn(500);
             }
         );
@@ -76,7 +76,7 @@
 <img src="img/site/catear.png" id="catear" class="catear">
 
 <div class="categoryWithCarousel">
-    <div class="headbar show">
+    <div class="headbar show1">
         <div class="head">
             <span style="margin-left: 10px" class="glyphicon glyphicon-th-list"></span>
             <span style="margin-left: 10px">商品分类</span>
