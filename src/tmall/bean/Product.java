@@ -17,8 +17,8 @@ public class Product {
     private List<ProductImage> productImages;
     private List<ProductImage> productSingleImages;
     private List<ProductImage> productDetailImages;
-    private int reviewCount;
-    private int saleCount;
+    private int reviewCount;//该商品的评价数
+    private int saleCount;//该商品的购买人数
 
     public String getName() {
         return name;

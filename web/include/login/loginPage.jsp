@@ -28,10 +28,10 @@
 <div id="loginDiv" style="position: relative">
 
     <div class="simpleLogo">
-        <a href="forehome"><img src="img/site/simpleLogo.png"></a>
+        <a href="forehome"><img src="../../img/site/simpleLogo.png"></a>
     </div>
 
-    <img id="loginBackgroundImg" class="loginBackgroundImg" src="img/site/loginBackground.png">
+    <img id="loginBackgroundImg" class="loginBackgroundImg" src="../../img/site/loginBackground.png">
 
     <form class="loginForm" action="forelogin" method="post">
         <div id="loginSmallDiv" class="loginSmallDiv">
@@ -60,7 +60,7 @@
 
             <div>
                 <a class="notImplementLink" href="#nowhere">忘记登录密码</a>
-                <a href="register.jsp" class="pull-right">免费注册</a>
+                <a href="../../register.jsp" class="pull-right">免费注册</a>
             </div>
             <div style="margin-top:20px">
                 <button class="btn btn-block redButton" type="submit">登录</button>

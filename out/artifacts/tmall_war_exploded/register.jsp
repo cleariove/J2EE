@@ -9,5 +9,5 @@
 <%@ include file="include/fore/header.jsp"%>
 <%@ include file="include/fore/top.jsp"%>
 <%@ include file="include/fore/simpleSearch.jsp"%>
-<%@include file="include/fore/registerPage.jsp"%>
+<%@include file="include/register/registerPage.jsp"%>
 <%@ include file="include/fore/footer.jsp"%>
