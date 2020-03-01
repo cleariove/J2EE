@@ -94,25 +94,26 @@ public class ForeServlet extends BaseForeServlet {
         productDAO.fill(c);
         productDAO.setSaleAndReviewNumber(c.getProducts());
         String sort = request.getParameter("sort");
-        switch (sort)
-        {
-            case "review":
-                c.getProducts().sort((o1,o2)-> o2.getReviewCount() - o1.getReviewCount());
-                break;
-            case "date":
-                c.getProducts().sort(Comparator.comparing(Product::getCreateDate));
-                break;
-            case "saleCount":
-                c.getProducts().sort((p1,p2)->p2.getSaleCount() - p1.getSaleCount());
-                break;
-            case "price":
-                c.getProducts().sort((p1,p2)-> (int) (p1.getPromotePrice() - p2.getPromotePrice()));
-                break;
-            case "all":
-                c.getProducts().sort((p1,p2)-> p2.getReviewCount() * p2.getSaleCount() -
-                        p1.getReviewCount() * p1.getSaleCount());
-                break;
-        }
+        if(sort != null)
+            switch (sort)
+            {
+                case "review":
+                    c.getProducts().sort((o1,o2)-> o2.getReviewCount() - o1.getReviewCount());
+                    break;
+                case "date":
+                    c.getProducts().sort(Comparator.comparing(Product::getCreateDate));
+                    break;
+                case "saleCount":
+                    c.getProducts().sort((p1,p2)->p2.getSaleCount() - p1.getSaleCount());
+                    break;
+                case "price":
+                    c.getProducts().sort((p1,p2)-> (int) (p1.getPromotePrice() - p2.getPromotePrice()));
+                    break;
+                case "all":
+                    c.getProducts().sort((p1,p2)-> p2.getReviewCount() * p2.getSaleCount() -
+                            p1.getReviewCount() * p1.getSaleCount());
+                    break;
+            }
         request.setAttribute("c",c);
         return "category.jsp";
     }
