@@ -7,7 +7,7 @@ import tmall.util.Page;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -126,5 +126,88 @@ public class ForeServlet extends BaseForeServlet {
         productDAO.setSaleAndReviewNumber(products);
         request.setAttribute("ps",products);
         return "searchResult.jsp";
+    }
+
+    public String buyone(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int pid = Integer.parseInt(request.getParameter("pid"));
+        int number = Integer.parseInt(request.getParameter("num"));
+
+        User user= (User) request.getSession().getAttribute("user");
+        Product product = productDAO.get(pid);
+
+        List<OrderItem> orderItems = orderItemDAO.listByUser(user.getId());
+        int oiid = 0;
+        boolean flag = false;
+        for(OrderItem o:orderItems)
+        {
+            if(o.getProduct().getId() == pid)
+            {
+                o.setNumber(o.getNumber() + number);
+                orderItemDAO.update(o);
+                oiid = o.getId();
+                flag = true;
+                break;
+            }
+        }
+        if(!flag)
+        {
+            OrderItem orderItem = new OrderItem();
+            orderItem.setNumber(number);
+            orderItem.setProduct(product);
+            orderItem.setUser(user);
+            orderItemDAO.add(orderItem);
+            oiid = orderItem.getId();
+        }
+        return "@forebuy?oiid="+oiid;
+    }
+
+    public String buy(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        //因为结算时可以同时选中多个商品一起结算
+        String[] oiids = request.getParameterValues("oiid");
+        List<OrderItem> orderItems = new ArrayList<>();
+        float totalPrice = 0;
+        for(String oiid:oiids)
+        {
+            int id = Integer.parseInt(oiid);
+            OrderItem orderItem = orderItemDAO.get(id);
+            totalPrice += orderItem.getNumber() * orderItem.getProduct().getPromotePrice();
+            orderItems.add(orderItem);
+        }
+        request.getSession().setAttribute("ois",orderItems);
+        request.setAttribute("total",totalPrice);
+        return "buy.jsp";
+    }
+
+    public String addCart(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int pid = Integer.parseInt(request.getParameter("pid"));
+        int number = Integer.parseInt(request.getParameter("num"));
+
+        User user= (User) request.getSession().getAttribute("user");
+        Product product = productDAO.get(pid);
+
+        List<OrderItem> orderItems = orderItemDAO.listByUser(user.getId());
+        boolean flag = false;
+        for(OrderItem o:orderItems)
+        {
+            if(o.getProduct().getId() == pid)
+            {
+                o.setNumber(o.getNumber() + number);
+                orderItemDAO.update(o);
+                flag = true;
+                break;
+            }
+        }
+        if(!flag)
+        {
+            OrderItem orderItem = new OrderItem();
+            orderItem.setNumber(number);
+            orderItem.setProduct(product);
+            orderItem.setUser(user);
+            orderItemDAO.add(orderItem);
+        }
+        return "%success";
     }
 }

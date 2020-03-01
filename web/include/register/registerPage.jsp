@@ -5,38 +5,38 @@
             $("span.errorMessage").html("${msg}");
             $("div.registerErrorMessageDiv").css("visibility","visible");
         </c:if>
+        $(".registerForm").submit(
+            function () {
+                if($("#name").val().length == 0)
+                {
+                    $("span.errorMessage").html("请输入用户名");
+                    $("div.registerErrorMessageDiv").css("visibility","visible");
+                    return false;
+                }
+                if(0 == $("#password").val().length)
+                {
+                    $("span.errorMessage").html("请输入密码");
+                    $("div.registerErrorMessageDiv").css("visibility","visible");
+                    return false;
+                }
+                if(0==$("#repeatpassword").val().length)
+                {
+                    $("span.errorMessage").html("请输入重复密码");
+                    $("div.registerErrorMessageDiv").css("visibility","visible");
+                    return false;
+                }
+                if($("#password").val() != $("#repeatpassword").val())
+                {
+                    $("span.errorMessage").html("两次密码不一致");
+                    $("div.registerErrorMessageDiv").css("visibility","visible");
+                    return false;
+                }
+                return true;
+            }
+        );
     });
-    $(".registerForm").submit(
-        function () {
-            if($("#name").val().length == 0)
-            {
-                $("span.errorMessage").html("请输入用户名");
-                $("div.registerErrorMessageDiv").css("visibility","visible");
-                return false;
-            }
-            if(0 == $("#password").val().length)
-            {
-                $("span.errorMessage").html("请输入密码");
-                $("div.registerErrorMessageDiv").css("visibility","visible");
-                return false;
-            }
-            if(0==$("#repeatpassword").val().length)
-            {
-                $("span.errorMessage").html("请输入重复密码");
-                $("div.registerErrorMessageDiv").css("visibility","visible");
-                return false;
-            }
-            if($("#password").val() !=$("#repeatpassword").val())
-            {
-                $("span.errorMessage").html("重复密码不一致");
-                $("div.registerErrorMessageDiv").css("visibility","visible");
-                return false;
-            }
-            return true;
-        }
-    );
 </script>
-<form action="/foreregister" method="post" class="registerForm">
+<form action="foreregister" method="post" class="registerForm">
     <div class="registerDiv">
         <div class="registerErrorMessageDiv">
             <div class="alert alert-danger" role="alert">
@@ -59,16 +59,22 @@
             </tr>
             <tr>
                 <td class="registerTableLeftTD">登陆密码</td>
-                <td class="registerTableRightTD"><input id="password" name="password" type="password"  placeholder="设置你的登陆密码" > </td>
+                <td class="registerTableRightTD">
+                    <input id="password" name="password" type="password"  placeholder="设置你的登陆密码" >
+                </td>
             </tr>
             <tr>
                 <td class="registerTableLeftTD">密码确认</td>
-                <td class="registerTableRightTD"><input id="repeatpassword" type="password"   placeholder="请再次输入你的密码" > </td>
+                <td class="registerTableRightTD">
+                    <input id="repeatpassword" type="password"   placeholder="请再次输入你的密码" >
+                </td>
             </tr>
 
             <tr>
                 <td colspan="2" class="registerButtonTD">
-                    <a href="../../registerSuccess.jsp"><button>提   交</button></a>
+                    <button type="submit">
+                        提   交
+                    </button>
                 </td>
             </tr>
         </table>
