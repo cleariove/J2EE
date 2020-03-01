@@ -69,7 +69,8 @@ public class ForeServlet extends BaseForeServlet {
         return "product.jsp";
     }
 
-    public String checkLogin(HttpServletRequest request, HttpServletResponse response, Page page) {
+    public String checkLogin(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
         User user = (User) request.getSession().getAttribute("user");
         if (user == null)
             return "%error";
@@ -116,5 +117,14 @@ public class ForeServlet extends BaseForeServlet {
             }
         request.setAttribute("c",c);
         return "category.jsp";
+    }
+
+    public String search(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        String keyword = request.getParameter("keyword");
+        List<Product> products = productDAO.search(keyword);
+        productDAO.setSaleAndReviewNumber(products);
+        request.setAttribute("ps",products);
+        return "searchResult.jsp";
     }
 }

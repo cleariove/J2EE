@@ -272,6 +272,11 @@ public class ProductDAO {
             setSaleAndReviewNumber(p);
         }
     }
+
+    public List<Product> search(String keyword)
+    {
+        return search(keyword,0,Short.MAX_VALUE);
+    }
  
     public List<Product> search(String keyword, int start, int count) {
          List<Product> beans = new ArrayList<Product>();

@@ -84,7 +84,7 @@
             $("a.notImplementLink").click(function(){
                 alert("这个功能没做，蛤蛤~");
             });
-        })
+        });
     </script>
 </head>
 <body>
