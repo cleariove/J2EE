@@ -6,10 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="">
+    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="完成分类展示页面">
+      <change afterPath="$PROJECT_DIR$/web/category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/include/category/categoryPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/include/category/productsByCategory.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/include/category/sortBar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tmall/servlet/ForeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/servlet/ForeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/include/fore/modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include/fore/modal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/servlet/ForeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/servlet/ForeServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +248,7 @@
       <workItem from="1582972332610" duration="2515000" />
       <workItem from="1582977170458" duration="15996000" />
       <workItem from="1583029420015" duration="5736000" />
-      <workItem from="1583039590489" duration="1930000" />
+      <workItem from="1583039590489" duration="10383000" />
     </task>
     <task id="LOCAL-00001" summary="上传了dao类和实体类，以及一些css">
       <created>1578662431177</created>
@@ -435,15 +439,20 @@
       <option name="project" value="LOCAL" />
       <updated>1583035590895</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="完成模态窗口">
+      <created>1583041910269</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1583041910269</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="上传了dao类" />
-    <MESSAGE value="对于DAO做了一些注释，增加了一个拦截器" />
     <MESSAGE value="上传了jsp的头部文件" />
     <MESSAGE value="类别的公共页面" />
     <MESSAGE value="后台完成分页，分类转发功能" />
@@ -467,7 +476,9 @@
     <MESSAGE value="完成注册部分" />
     <MESSAGE value="完成登录部分" />
     <MESSAGE value="完成产品的展示部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成产品的展示部分" />
+    <MESSAGE value="完成模态窗口" />
+    <MESSAGE value="完成分类展示页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成分类展示页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Auto_Import" timestamp="1582625728218">
@@ -514,10 +525,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578662226794" />
-    <state x="408" y="0" key="CommitChangelistDialog2" timestamp="1583035589817">
+    <state x="408" y="0" key="CommitChangelistDialog2" timestamp="1583051606807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="408" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583035589817" />
+    <state x="408" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583051606807" />
     <state x="523" y="128" key="DetectedRootsChooserDialog" timestamp="1582173209146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -654,10 +665,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582426570702" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583041294989">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583049720163">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583041294989" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583049720163" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
