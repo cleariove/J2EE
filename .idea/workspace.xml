@@ -6,15 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="完成用户验证模块">
+    <list default="true" id="270f261c-16a4-40fb-b2c5-32621eba6a61" name="Default Changelist" comment="修复了选中购物车的商品后无法结算的bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/filter/ForeServletFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/classes/tmall/filter/ForeServletFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/cart/cartPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/cart/cartPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/fore/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/tmall_war_exploded/include/fore/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/filter/ForeServletFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/tmall/filter/ForeServletFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/include/cart/cartPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include/cart/cartPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/include/fore/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include/fore/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tmall/servlet/ForeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmall/servlet/ForeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/include/cart/buyPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include/cart/buyPage.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -253,7 +248,7 @@
       <workItem from="1583039590489" duration="13716000" />
       <workItem from="1583057736754" duration="14125000" />
       <workItem from="1583121257509" duration="4838000" />
-      <workItem from="1583144782566" duration="329000" />
+      <workItem from="1583144782566" duration="3409000" />
     </task>
     <task id="LOCAL-00001" summary="上传了dao类和实体类，以及一些css">
       <created>1578662431177</created>
@@ -493,14 +488,20 @@
       <option name="project" value="LOCAL" />
       <updated>1583127650303</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="修复了选中购物车的商品后无法结算的bug">
+      <created>1583145369385</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1583145369386</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成图像工具中的格式转换工作" />
     <MESSAGE value="解决了中文乱码" />
     <MESSAGE value="完成了编辑更新操作" />
     <MESSAGE value="更改了图片大小" />
@@ -525,7 +526,8 @@
     <MESSAGE value="完成购买结算页面" />
     <MESSAGE value="完成购买购物车页面前端" />
     <MESSAGE value="完成用户验证模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成用户验证模块" />
+    <MESSAGE value="修复了选中购物车的商品后无法结算的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了选中购物车的商品后无法结算的bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Auto_Import" timestamp="1582625728218">
@@ -572,10 +574,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578662226794" />
-    <state x="408" y="0" key="CommitChangelistDialog2" timestamp="1583127649698">
+    <state x="408" y="0" key="CommitChangelistDialog2" timestamp="1583147830438">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="408" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583127649698" />
+    <state x="408" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583147830438" />
     <state x="523" y="128" key="DetectedRootsChooserDialog" timestamp="1582173209146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -592,54 +594,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="577" y="308" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1582816594087" />
-    <state width="1024" height="218" key="GridCell.Tab.0.bottom" timestamp="1583145272961">
+    <state width="1024" height="218" key="GridCell.Tab.0.bottom" timestamp="1583148081720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583145272961" />
-    <state width="1024" height="218" key="GridCell.Tab.0.center" timestamp="1583145272961">
+    <state width="1024" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583148081720" />
+    <state width="1024" height="218" key="GridCell.Tab.0.center" timestamp="1583148081720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583145272961" />
-    <state width="1024" height="218" key="GridCell.Tab.0.left" timestamp="1583145272961">
+    <state width="1024" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583148081720" />
+    <state width="1024" height="218" key="GridCell.Tab.0.left" timestamp="1583148081720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583145272961" />
-    <state width="1024" height="218" key="GridCell.Tab.0.right" timestamp="1583145272961">
+    <state width="1024" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583148081720" />
+    <state width="1024" height="218" key="GridCell.Tab.0.right" timestamp="1583148081720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583145272961" />
-    <state width="1024" height="218" key="GridCell.Tab.1.bottom" timestamp="1583145272961">
+    <state width="1024" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583148081720" />
+    <state width="1024" height="218" key="GridCell.Tab.1.bottom" timestamp="1583148082996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583145272961" />
-    <state width="1024" height="218" key="GridCell.Tab.1.center" timestamp="1583145272961">
+    <state width="1024" height="218" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583148082996" />
+    <state width="1024" height="218" key="GridCell.Tab.1.center" timestamp="1583148082996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583145272961" />
-    <state width="1024" height="218" key="GridCell.Tab.1.left" timestamp="1583145272961">
+    <state width="1024" height="218" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583148082996" />
+    <state width="1024" height="218" key="GridCell.Tab.1.left" timestamp="1583148082996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583145272961" />
-    <state width="1024" height="218" key="GridCell.Tab.1.right" timestamp="1583145272961">
+    <state width="1024" height="218" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583148082996" />
+    <state width="1024" height="218" key="GridCell.Tab.1.right" timestamp="1583148082996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583145272961" />
-    <state width="1024" height="218" key="GridCell.Tab.2.bottom" timestamp="1583145274238">
+    <state width="1024" height="218" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583148082996" />
+    <state width="1024" height="218" key="GridCell.Tab.2.bottom" timestamp="1583148082345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583145274238" />
-    <state width="1024" height="218" key="GridCell.Tab.2.center" timestamp="1583145274238">
+    <state width="1024" height="218" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583148082345" />
+    <state width="1024" height="218" key="GridCell.Tab.2.center" timestamp="1583148082345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1583145274238" />
-    <state width="1024" height="218" key="GridCell.Tab.2.left" timestamp="1583145274238">
+    <state width="1024" height="218" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1583148082345" />
+    <state width="1024" height="218" key="GridCell.Tab.2.left" timestamp="1583148082345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1583145274238" />
-    <state width="1024" height="218" key="GridCell.Tab.2.right" timestamp="1583145274238">
+    <state width="1024" height="218" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1583148082345" />
+    <state width="1024" height="218" key="GridCell.Tab.2.right" timestamp="1583148082345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583145274238" />
+    <state width="1024" height="218" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1583148082345" />
     <state width="1024" height="218" key="GridCell.Tab.3.bottom" timestamp="1583121330571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

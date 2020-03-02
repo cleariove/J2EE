@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" isELIgnored="false" %>
 <div class="buyPageDiv">
-    <form method="post" class="forecreateOrder">
+    <form method="post" action="forecreateOrder" class="forecreateOrder">
         <div class="buyFlow">
             <img class="pull-left" src="img/site/simpleLogo.png">
             <img class="pull-right" src="img/site/buyflow.png">

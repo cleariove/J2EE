@@ -2,6 +2,8 @@ package tmall.servlet;
 
 import org.springframework.web.util.HtmlUtils;
 import tmall.bean.*;
+import tmall.dao.OrderDAO;
+import tmall.dao.OrderItemDAO;
 import tmall.dao.ProductImageDAO;
 import tmall.util.Page;
 
@@ -9,9 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 public class ForeServlet extends BaseForeServlet {
+    //主页
     public String home(HttpServletRequest request, HttpServletResponse response, Page page) {
         List<Category> categories = categoryDAO.list();
         productDAO.fill(categories);
@@ -20,6 +24,7 @@ public class ForeServlet extends BaseForeServlet {
         return "home.jsp";
     }
 
+    //注册
     public String register(HttpServletRequest request, HttpServletResponse response, Page page) {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
@@ -35,6 +40,7 @@ public class ForeServlet extends BaseForeServlet {
         return "@registerSuccess.jsp";
     }
 
+    //登录
     public String login(HttpServletRequest request, HttpServletResponse response, Page page) {
         String name = request.getParameter("name");
         name = HtmlUtils.htmlEscape(name);
@@ -48,11 +54,13 @@ public class ForeServlet extends BaseForeServlet {
         return "@forehome";
     }
 
+    //登出
     public String logout(HttpServletRequest request, HttpServletResponse response, Page page) {
         request.getSession().removeAttribute("user");
         return "@forehome";
     }
 
+    //查看某个商品
     public String product(HttpServletRequest request, HttpServletResponse response, Page page) {
         int pid = Integer.parseInt(request.getParameter("pid"));
         Product product = productDAO.get(pid);
@@ -69,6 +77,7 @@ public class ForeServlet extends BaseForeServlet {
         return "product.jsp";
     }
 
+    //判断是否登录了
     public String checkLogin(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         User user = (User) request.getSession().getAttribute("user");
@@ -77,6 +86,7 @@ public class ForeServlet extends BaseForeServlet {
         return "%success";
     }
 
+    //通过模态框进行的登录
     public String loginAjax(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         String name = request.getParameter("name");
@@ -88,6 +98,7 @@ public class ForeServlet extends BaseForeServlet {
         return "%success";
     }
 
+    //查看某分类下所有商品
     public String category(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         int cid = Integer.parseInt(request.getParameter("cid"));
@@ -119,6 +130,7 @@ public class ForeServlet extends BaseForeServlet {
         return "category.jsp";
     }
 
+    //搜索
     public String search(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         String keyword = request.getParameter("keyword");
@@ -128,6 +140,7 @@ public class ForeServlet extends BaseForeServlet {
         return "searchResult.jsp";
     }
 
+    //直接从商品链接处进行购买
     public String buyone(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         int pid = Integer.parseInt(request.getParameter("pid"));
@@ -162,6 +175,7 @@ public class ForeServlet extends BaseForeServlet {
         return "@forebuy?oiid="+oiid;
     }
 
+    //从购物车页面进行购买
     public String buy(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         //因为结算时可以同时选中多个商品一起结算
@@ -175,11 +189,13 @@ public class ForeServlet extends BaseForeServlet {
             totalPrice += orderItem.getNumber() * orderItem.getProduct().getPromotePrice();
             orderItems.add(orderItem);
         }
+        //不仅在付款页面需要该订单的所有项目，后续页面也需要
         request.getSession().setAttribute("ois",orderItems);
         request.setAttribute("total",totalPrice);
         return "buy.jsp";
     }
 
+    //商品添加购物车
     public String addCart(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         int pid = Integer.parseInt(request.getParameter("pid"));
@@ -211,6 +227,7 @@ public class ForeServlet extends BaseForeServlet {
         return "%success";
     }
 
+    //查看购物车
     public String cart(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         User user = (User) request.getSession().getAttribute("user");
@@ -219,6 +236,7 @@ public class ForeServlet extends BaseForeServlet {
         return "cart.jsp";
     }
 
+    //修改购物车中商品的数量
     public String changeOrderItem(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         User user = (User) request.getSession().getAttribute("user");
@@ -239,6 +257,7 @@ public class ForeServlet extends BaseForeServlet {
         return "%success";
     }
 
+    //删除购物车中某商品
     public String deleteOrderItem(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         User user = (User) request.getSession().getAttribute("user");
@@ -247,5 +266,59 @@ public class ForeServlet extends BaseForeServlet {
         int oiid = Integer.parseInt(request.getParameter("oiid"));
         orderItemDAO.delete(oiid);
         return "%success";
+    }
+
+    //生成订单
+    public String createOrder(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        User user = (User) request.getSession().getAttribute("user");
+        if(user == null)
+            return "@login.jsp";
+        List<OrderItem> ois = (List<OrderItem>) request.getSession().getAttribute("ois");
+        if(ois == null)
+            return "@login.jsp";
+        String address = request.getParameter("address");
+        String post = request.getParameter("post");
+        String receiver = request.getParameter("receiver");
+        String mobile = request.getParameter("mobile");
+        String userMessage = request.getParameter("userMessage");
+
+        Order order = new Order();
+        order.setAddress(address);
+        order.setPost(post);
+        order.setReceiver(receiver);
+        order.setMobile(mobile);
+        order.setUserMessage(userMessage);
+        order.setUser(user);
+        order.setStatus(OrderDAO.waitPay);
+        order.setPayDate(new Date());
+
+        orderDAO.add(order);
+        float total = 0;
+        for(OrderItem oi:ois)
+        {
+            oi.setOrder(order);
+            orderItemDAO.update(oi);
+            total += oi.getNumber() * oi.getProduct().getPromotePrice();
+        }
+        return "@forealipay?oid="+order.getId()+"&total="+total;
+    }
+
+    //支付页面
+    public String alipay(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        return "alipay.jsp";
+    }
+
+    //支付成功页面
+    public String payed(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int oid = Integer.parseInt(request.getParameter("oid"));
+        Order order = orderDAO.get(oid);
+        order.setStatus(OrderDAO.waitDelivery);
+        order.setPayDate(new Date());
+        new OrderDAO().update(order);
+        request.setAttribute("o", order);
+        return "payed.jsp";
     }
 }
