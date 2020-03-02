@@ -133,8 +133,8 @@
         {
             var selectAny = false;
             $(".cartProductItemIfSelected").each(function () {
-                if("selectit"===$(this).attr("selectit"))
-                    selectAny === true;
+                if("selectit"==$(this).attr("selectit"))
+                    selectAny = true;
             });
 
             if(selectAny)
@@ -157,13 +157,13 @@
                     selectAll = false;
                 }
             });
-
             if(selectAll)
                 $("img.selectAllItem").attr("src","img/site/cartSelected.png");
             else
                 $("img.selectAllItem").attr("src","img/site/cartNotSelected.png");
         }
-        
+
+        //计算购物车中所有选中商品的总价
         function calcCartSumPriceAndNumber()
         {
             var sum = 0;
@@ -185,6 +185,7 @@
             $("span.cartSumNumber").html(totalNumber);
         }
 
+        //计算购物车中每一条商品的总价
         function syncPrice(pid,num,price)
         {
             $(".orderItemNumberSetting[pid="+pid+"]").val(num);

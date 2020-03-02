@@ -21,7 +21,7 @@
             num = num.toString().replace(/[$,]/,'');
             if(isNaN(num))
                 num = "0";
-            var sign = (num === (num = Math.abs(num)));
+            var sign = (num ==  (num = Math.abs(num)));
             //Math.floor()为向下取整,这句代码用于保留两位小数四舍五入
             //下面五行代码将金额的整数部分存入num中，小数部分存入cents中
             num = Math.floor((num * 100) + 0.500001);
