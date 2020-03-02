@@ -345,6 +345,7 @@ public class ForeServlet extends BaseForeServlet {
     {
         int oid = Integer.parseInt(request.getParameter("oid"));
         Order order = orderDAO.get(oid);
+        orderItemDAO.fill(order);
         request.setAttribute("o",order);
         return "confirmPay.jsp";
     }
