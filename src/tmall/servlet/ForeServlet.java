@@ -340,7 +340,7 @@ public class ForeServlet extends BaseForeServlet {
         return "bought.jsp";
     }
 
-    //确认收货
+    //跳转至确认收货页面
     public String confirmPay(HttpServletRequest request, HttpServletResponse response, Page page)
     {
         int oid = Integer.parseInt(request.getParameter("oid"));
@@ -348,5 +348,26 @@ public class ForeServlet extends BaseForeServlet {
         orderItemDAO.fill(order);
         request.setAttribute("o",order);
         return "confirmPay.jsp";
+    }
+
+    //完成确认收货
+    public String orderConfirmed(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int oid = Integer.parseInt(request.getParameter("oid"));
+        Order o = orderDAO.get(oid);
+        o.setStatus(OrderDAO.waitReview);
+        o.setConfirmDate(new Date());
+        orderDAO.update(o);
+        return "orderConfirmed.jsp";
+    }
+
+    //订单删除
+    public String deleteOrder(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int oid = Integer.parseInt(request.getParameter("oid"));
+        Order o = orderDAO.get(oid);
+        o.setStatus(OrderDAO.delete);
+        orderDAO.update(o);
+        return "%success";
     }
 }
