@@ -339,4 +339,13 @@ public class ForeServlet extends BaseForeServlet {
         request.setAttribute("orders",orders);
         return "bought.jsp";
     }
+
+    //确认收货
+    public String confirmPay(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int oid = Integer.parseInt(request.getParameter("oid"));
+        Order order = orderDAO.get(oid);
+        request.setAttribute("o",order);
+        return "confirmPay.jsp";
+    }
 }
