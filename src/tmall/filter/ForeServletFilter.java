@@ -51,6 +51,7 @@ public class ForeServletFilter implements Filter {
         request.setAttribute("contextPath",context);
         String uri = request.getRequestURI();
         String s = StringUtils.remove(uri,context);
+        //不能拦截foreServlet开头的网址，不然就出不去了
         if(s.startsWith("/fore") && !s.startsWith("/foreServlet"))
         {
             String method = StringUtils.substringAfterLast(s,"/fore");
