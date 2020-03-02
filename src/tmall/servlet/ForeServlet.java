@@ -1,5 +1,6 @@
 package tmall.servlet;
 
+import org.apache.commons.lang.math.RandomUtils;
 import org.springframework.web.util.HtmlUtils;
 import tmall.bean.*;
 import tmall.dao.OrderDAO;
@@ -9,6 +10,7 @@ import tmall.util.Page;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Date;
@@ -284,6 +286,9 @@ public class ForeServlet extends BaseForeServlet {
         String userMessage = request.getParameter("userMessage");
 
         Order order = new Order();
+        String orderCode = new SimpleDateFormat("yyyyMMddHHmmssSSS")
+                .format(new Date()) + RandomUtils.nextInt(10000);
+        order.setOrderCode(orderCode);
         order.setAddress(address);
         order.setPost(post);
         order.setReceiver(receiver);
@@ -291,7 +296,7 @@ public class ForeServlet extends BaseForeServlet {
         order.setUserMessage(userMessage);
         order.setUser(user);
         order.setStatus(OrderDAO.waitPay);
-        order.setPayDate(new Date());
+        order.setCreateDate(new Date());
 
         orderDAO.add(order);
         float total = 0;
@@ -299,6 +304,9 @@ public class ForeServlet extends BaseForeServlet {
         {
             oi.setOrder(order);
             orderItemDAO.update(oi);
+            Product p = oi.getProduct();
+            p.setStock(p.getStock() - oi.getNumber());
+            productDAO.update(p);
             total += oi.getNumber() * oi.getProduct().getPromotePrice();
         }
         return "@forealipay?oid="+order.getId()+"&total="+total;
@@ -320,5 +328,15 @@ public class ForeServlet extends BaseForeServlet {
         new OrderDAO().update(order);
         request.setAttribute("o", order);
         return "payed.jsp";
+    }
+
+    //查看订单页面
+    public String bought(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        User user = (User) request.getSession().getAttribute("user");
+        List<Order> orders = orderDAO.list(user.getId(),OrderDAO.delete);
+        orderItemDAO.fill(orders);
+        request.setAttribute("orders",orders);
+        return "bought.jsp";
     }
 }
