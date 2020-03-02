@@ -93,7 +93,7 @@
                     return false;
                 }
                 var page = "foreloginAjax";
-                $.getAttribute(
+                $.get(
                     page,
                     {"name":name,"password":password},
                     function (result)
@@ -195,18 +195,18 @@
             <span>数量</span>
             <span>
                 <span class="productNumberSettingSpan">
-                <input class="productNumberSetting" type="text" value="1">
+                    <input class="productNumberSetting" type="text" value="1">
                 </span>
                 <span class="arrow">
                     <a href="#nowhere" class="increaseNumber">
                     <span class="updown">
-                            <img src="img/site/increase.png">
+                        <img src="img/site/increase.png">
                     </span>
                     </a>
                     <span class="updownMiddle"> </span>
                     <a href="#nowhere"  class="decreaseNumber">
                     <span class="updown">
-                            <img src="img/site/decrease.png">
+                        <img src="img/site/decrease.png">
                     </span>
                     </a>
                 </span>
