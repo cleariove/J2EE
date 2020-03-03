@@ -87,7 +87,7 @@
             <c:forEach items="${categories}" varStatus="status" var="c">
                 <c:if test="${status.count<=4}">
                     <span>
-                        <a href="foreCategory?cid=${c.id}">${c.name}</a>
+                        <a href="forecategory?cid=${c.id}">${c.name}</a>
                     </span>
                 </c:if>
             </c:forEach>

@@ -65,6 +65,7 @@
             <div style="margin-top:20px">
                 <button class="btn btn-block redButton" type="submit">登录</button>
             </div>
+            <a href="forehome"><span>跳过登录</span></a>
         </div>
     </form>
 

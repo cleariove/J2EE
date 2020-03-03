@@ -20,7 +20,7 @@ public class ForeAuthFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         String[] noNeedAuthPage = new String[]{"homepage", "checkLogin", "register",
-                "loginAjax", "login", "product", "category", "search" };
+                "loginAjax", "login", "product", "category", "search","home" };
         String contextPath = request.getServletContext().getContextPath();
         String uri = request.getRequestURI();
         uri = StringUtils.remove(uri,contextPath);

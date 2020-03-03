@@ -9,6 +9,7 @@ public class OrderItem {
     private Order order;
     private User user;
     private int id;
+    private Review review;
     public int getNumber() {
         return number;
     }
@@ -40,4 +41,11 @@ public class OrderItem {
         this.id = id;
     }
 
+    public Review getReview() {
+        return review;
+    }
+
+    public void setReview(Review review) {
+        this.review = review;
+    }
 }

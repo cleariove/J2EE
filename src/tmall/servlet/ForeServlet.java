@@ -370,4 +370,67 @@ public class ForeServlet extends BaseForeServlet {
         orderDAO.update(o);
         return "%success";
     }
+
+    //评价页面
+    public String review(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int oid = Integer.parseInt(request.getParameter("oid"));
+        Order order = orderDAO.get(oid);
+        orderItemDAO.fill(order);
+        List<OrderItem> ois = order.getOrderItems();
+        for(OrderItem oi:ois)
+        {
+            Product p = oi.getProduct();
+            productDAO.setFirstProductImage(p);
+            productDAO.setSaleAndReviewNumber(p);
+        }
+        request.setAttribute("o",order);
+        request.setAttribute("ois",ois);
+        return "review.jsp";
+    }
+
+    //提交评价
+    public String doReview(HttpServletRequest request, HttpServletResponse response, Page page)
+    {
+        int oid = Integer.parseInt(request.getParameter("oid"));
+        int pid = Integer.parseInt(request.getParameter("pid"));
+        int oiid = Integer.parseInt(request.getParameter("oiid"));
+        Order o = orderDAO.get(oid);
+
+        OrderItem orderItem = orderItemDAO.get(oiid);
+        Product p = productDAO.get(pid);
+
+        String content = request.getParameter("content");
+        content = HtmlUtils.htmlEscape(content);
+        User user = (User) request.getSession().getAttribute("user");
+
+        Review review = new Review();
+        review.setContent(content);
+        review.setCreateDate(new Date());
+        review.setProduct(p);
+        review.setUser(user);
+        reviewDAO.add(review);
+
+        orderItem.setReview(review);
+        orderItemDAO.update(orderItem);
+        orderItemDAO.fill(o);
+        boolean allReviewed = false;
+        for(OrderItem oi:o.getOrderItems())
+        {
+            if(oi.getReview() != null)
+                allReviewed = true;
+            else
+            {
+                allReviewed = false;
+                break;
+            }
+        }
+        System.out.println(allReviewed);
+        if(allReviewed)
+        {
+            o.setStatus(OrderDAO.finish);
+            orderDAO.update(o);
+        }
+        return "@forereview?oid="+oid;
+    }
 }

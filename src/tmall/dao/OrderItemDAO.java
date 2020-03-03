@@ -9,14 +9,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import tmall.bean.Category;
-import tmall.bean.Order;
-import tmall.bean.OrderItem;
-import tmall.bean.Product;
-import tmall.bean.User;
+import tmall.bean.*;
 import tmall.util.DBUtil;
-
-//订单详情
+ 
 public class OrderItemDAO {
  
     public int getTotal() {
@@ -37,12 +32,12 @@ public class OrderItemDAO {
     }
  
     public void add(OrderItem bean) {
-        String sql = "insert into OrderItem values(null,?,?,?,?)";
+        String sql = "insert into OrderItem values(null,?,?,?,?,-1)";
         try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);) {
  
             ps.setInt(1, bean.getProduct().getId());
             
-            //订单项在创建的时候，是没有订单信息的
+            //订单项在创建的时候，是没有蒂订单信息的
             if(null==bean.getOrder())
             	ps.setInt(2, -1);
             else
@@ -65,7 +60,7 @@ public class OrderItemDAO {
  
     public void update(OrderItem bean) {
 
-        String sql = "update OrderItem set pid= ?, oid=?, uid=?,number=?  where id = ?";
+        String sql = "update OrderItem set pid= ?, oid=?, uid=?,number=?,rid=?  where id = ?";
         try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
 
 
@@ -76,9 +71,12 @@ public class OrderItemDAO {
             	ps.setInt(2, bean.getOrder().getId());            	
             ps.setInt(3, bean.getUser().getId());
             ps.setInt(4, bean.getNumber());
-            
+            if(null==bean.getReview())
+                ps.setInt(5, -1);
+            else
+                ps.setInt(5, bean.getReview().getId());
 
-            ps.setInt(5, bean.getId());
+            ps.setInt(6, bean.getId());
             ps.execute();
  
         } catch (SQLException e) {
@@ -126,6 +124,13 @@ public class OrderItemDAO {
                     Order order= new OrderDAO().get(oid);
                     bean.setOrder(order);               	
                 }
+
+                int rid = rs.getInt("rid");
+                if(-1 != rid)
+                {
+                    Review review = new ReviewDAO().get(rid);
+                    bean.setReview(review);
+                }
                 
                 bean.setId(id);
             }
@@ -168,6 +173,12 @@ public class OrderItemDAO {
                     Order order= new OrderDAO().get(oid);
                     bean.setOrder(order);               	
                 }
+                int rid = rs.getInt("rid");
+                if(-1 != rid)
+                {
+                    Review review = new ReviewDAO().get(rid);
+                    bean.setReview(review);
+                }
 
                 User user = new UserDAO().get(uid);
                 bean.setProduct(product);
@@ -183,7 +194,6 @@ public class OrderItemDAO {
         }
         return beans;
     }
-
     public List<OrderItem> listByOrder(int oid) {
     	return listByOrder(oid, 0, Short.MAX_VALUE);
     }
@@ -215,7 +225,12 @@ public class OrderItemDAO {
     				Order order= new OrderDAO().get(oid);
     				bean.setOrder(order);               	
     			}
-    			
+                int rid = rs.getInt("rid");
+                if(-1 != rid)
+                {
+                    Review review = new ReviewDAO().get(rid);
+                    bean.setReview(review);
+                }
     			User user = new UserDAO().get(uid);
     			bean.setProduct(product);
     			
@@ -231,7 +246,6 @@ public class OrderItemDAO {
     	return beans;
     }
 
-    //获取某订单下所有的订单商品
 	public void fill(List<Order> os) {
 		for (Order o : os) {
 			List<OrderItem> ois=listByOrder(o.getId());
@@ -245,9 +259,11 @@ public class OrderItemDAO {
 			o.setOrderItems(ois);
 			o.setTotalNumber(totalNumber);
 		}
+		
+		
+		
 	}
 
-	//此方法暂时无用
 	public void fill(Order o) {
 		List<OrderItem> ois=listByOrder(o.getId());
 		float total = 0;
@@ -289,7 +305,12 @@ public class OrderItemDAO {
                     Order order= new OrderDAO().get(oid);
                     bean.setOrder(order);               	
                 }
-
+                int rid = rs.getInt("rid");
+                if(-1 != rid)
+                {
+                    Review review = new ReviewDAO().get(rid);
+                    bean.setReview(review);
+                }
                 User user = new UserDAO().get(uid);
                 bean.setProduct(product);
 

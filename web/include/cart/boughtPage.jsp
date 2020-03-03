@@ -86,6 +86,11 @@
                 待评价
             </a>
         </div>
+        <div>
+            <a orderStatus="finish" href="#nowhere" class="noRightborder">
+                已评价
+            </a>
+        </div>
         <div class="orderTypeLastOne">
             <a class="noRightborder"> </a>
         </div>
@@ -186,6 +191,11 @@
                                 <c:if test="${o.status=='waitReview' }">
                                     <a href="forereview?oid=${o.id}">
                                         <button  class="orderListItemReview">评价</button>
+                                    </a>
+                                </c:if>
+                                <c:if test="${o.status=='finish' }">
+                                    <a href="forereview?oid=${o.id}">
+                                        <button  class="orderListItemReview">查看评价</button>
                                     </a>
                                 </c:if>
                             </td>

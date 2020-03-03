@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="productReviewItemUserInfo">
-                    ${r.user.anonymousName}
+                    ${fn:substring(r.user.name,0,2)}******
                     <span class="userInfoGrayPart">（匿名）</span>
                 </div>
 
